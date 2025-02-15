@@ -1,0 +1,122 @@
+body{background-color: #bd7a50ee;}
+*{font-family:'Times New Roman', Times, serif; 
+    margin: 0; padding: 0; box-sizing: border-box;}
+
+/* IMAGENS */
+.logo {width: 220px; 
+    height: 76px; 
+    margin: 40px;}
+.baner {width: 36%;
+height: 75%;
+position: absolute; 
+top: 27%;
+left: 60%;
+border-radius: 30px;}
+
+/* BOTÕES */
+.mobile_btn {font-size: 2.0rem;
+    background: #1d1d1d;
+    background-color: transparent;
+    align-items: end;
+    cursor: pointer;
+    display: none;
+    border: none;}
+.mobile_menu {display: flex;} /* mobile-menu {display:block*/
+
+/* HEADER: nav */
+.navbar {display: flex;
+    align-items: center;
+    height: 15vh;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 1;} /*o z-index permite que a navbar fique sobre posta por outros elementos*/
+.nav_lista-itens {display: flex; 
+    justify-content: space-between; 
+    list-style: none; 
+    gap: 78%;
+    font-size: 20px;
+    padding-left: 14%;}
+.nav_itens a {text-decoration: none; 
+    color:grey; }
+.nav_itens.active a {color:#1d1d1d; 
+    border-bottom: 3px solid #ffe100; 
+    font-weight: 600}
+
+/* MAIN: conteúdo */
+main {height: 130vh;}
+.block {height: 30vh;
+    display: block;
+    width: 90%;
+    padding-top: 18%;
+    padding-left: 6%;
+    font-size: 23px;}
+.title {font-size: 30px;
+    color: white;
+    padding-top: 32vh;
+    padding-left: 12vh;
+    width: 55%;}
+.title h1 {font-size: 12vh;
+}
+.title h4{font-weight: 100;
+    padding-top: 6px;
+    font-size: 25px;}
+.title p {font-weight: 100;
+    font-style: italic;
+    padding-top: 8%;}
+
+/*.fundo {font-size: 11vh;
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(255, 255, 255, 0.454);
+    position: relative;
+    }*/
+
+/* FOOTER: rodapé */
+.nav_rodape {display: block;
+    z-index: 2;
+    background-color: #1d1d1d;}
+.title-rdp {color: rgb(131, 131, 131);
+    font-size: 35px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    margin: 5%;
+    padding-top: 4vh;}
+.title-rdp p {font-size: 2.5vh;}
+.redes-sociais {display: flex; 
+    justify-content: center;
+    gap: 42px;
+    position: relative;}
+.redes-sociais a {text-decoration: none;
+    color: rgba(255, 255, 255, 0.945);
+    font-size: 32px;
+    width: 50px;
+    height: 45px;}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1170px){
+    .nav_lista-itens {font-size: 22px; 
+        margin: 13%; 
+        gap: 72%}
+    .logo {width: 190px;}
+    .baner {width: 45%; 
+        left: 52%; 
+        height:60%;}
+    .title { font-size: 28px;
+        padding-top: 23vh; 
+        padding-left: 6vh;
+        width: 48%;}
+    .title h1 {font-size: 8vh;}
+    .title h5 {padding-top: 2px;}
+    .title p {padding-top: 15%;
+        padding-left: 5%;
+        font-size: 4vh;}
+    .title-rdp {margin: 8%;
+        font-size: 30px;
+        padding-top: 3vh;
+        text-align: center;
+        gap: 50px;}
+    main {height: 150vh;}
+}
+
+
